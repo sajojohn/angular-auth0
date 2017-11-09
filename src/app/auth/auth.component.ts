@@ -45,6 +45,7 @@ export class AuthComponent implements OnInit {
 
     this.authService.login(this.loginForm.value.username, this.loginForm.value.password)
       .subscribe((userSession: UserSession) => {
+        console.log('user session?????', userSession);
         this.router.navigate(['/products']);
       }, ((err: string) => {
         console.log('un-happy');

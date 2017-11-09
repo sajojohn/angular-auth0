@@ -37,6 +37,7 @@ export class AuthService {
                     this.storeToken();
                     // save token in local storage.
                 } else {
+                    console.log('throwing error');
                     return Observable.throw('There was an error when logging in. Please try again.');
                 }
             }).catch((err) => {
@@ -58,5 +59,9 @@ export class AuthService {
     private removeTokensAndSession() {
         localStorage.removeItem('id_token');
         localStorage.removeItem('userSession');
+    }
+
+    public authenticated() {
+        return tokenNotExpired(environment.authConfig.idTokenName, localStorage.getItem(environment.authConfig.idTokenName));
     }
 }

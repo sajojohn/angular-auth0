@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
+import { AuthService } from '../../auth/auth.service';
+
 @Component({
   selector: 'app-top-nav-bar',
   templateUrl: './top-nav-bar.component.html',
@@ -9,7 +11,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 export class TopNavBarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public authService: AuthService) { }
 
   ngOnInit() {
   }
@@ -24,5 +26,6 @@ export class TopNavBarComponent implements OnInit {
     console.log('to login');
     this.router.navigate(['/login']);
   }
+
 
 }
