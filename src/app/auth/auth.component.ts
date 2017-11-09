@@ -42,10 +42,9 @@ export class AuthComponent implements OnInit {
   }
 
   login() {
-    console.log('login user  here');
+
     this.authService.login(this.loginForm.value.username, this.loginForm.value.password)
       .subscribe((userSession: UserSession) => {
-        console.log(' happy', userSession);
         this.router.navigate(['/products']);
       }, ((err: string) => {
         console.log('un-happy');

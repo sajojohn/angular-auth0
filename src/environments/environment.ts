@@ -5,5 +5,8 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://gbme9mr0gk.execute-api.us-west-2.amazonaws.com/prod/'
+  apiBaseUrl: 'https://gbme9mr0gk.execute-api.us-west-2.amazonaws.com/prod/',
+  authConfig: {
+    idTokenName: 'id_token'
+  }
 };
