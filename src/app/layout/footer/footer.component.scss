@@ -1,0 +1,36 @@
+@import '../../shared/styles/app/variables.scss';
+@import '../../shared/styles/app/media-queries.scss';
+.footer {
+  padding: 5px 0px 0px 0px;
+  background-color: $brand-primary;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: $footer-hg;
+  color: white;
+  z-index: $z-index-main-section;
+  >p {
+    margin: 0;
+  }
+  -webkit-transform: translateZ(0);
+}
+
+.footer-text {
+  display: inline-block;
+}
+
+.footer-location-arrow {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer-mouse-position {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+.footer-col {
+  height: 25px;
+}

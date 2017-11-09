@@ -1,0 +1,202 @@
+@import '../../shared/styles/app/variables.scss';
+@import '../../shared/styles/app/media-queries.scss';
+.navbar-login a {
+  padding-right: 0px;
+}
+.navbar-clear{
+  padding-left: 2px;
+}
+.navbar {
+  position: relative;
+  min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  margin-bottom: $navbar-margin-bottom;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.search {
+  margin-top: 13px;
+  max-height: 40px;
+  display: inline-block;
+}
+
+#searchField {
+  @media only screen and (min-width: $mq-tablet) {
+    width: 307px !important;
+  }
+  @media only screen and (max-width: $mq-up-to-tablet) {
+    width: 195px !important;
+  }
+}
+
+.brand-logo {
+  display: inline;
+}
+
+.brand-logo-image {
+  display: block;
+  @media only screen and (min-width: $mq-tablet) {
+    height: 45px;
+  }
+  @media only screen and (max-width: $mq-up-to-tablet) {
+    height: 32px;
+  }
+}
+
+.lm-lookup__input__field_container {
+  @media only screen and (min-width: $mq-tablet) {
+    width: 309px !important;
+  }
+  @media only screen and (max-width: $mq-up-to-tablet) {
+    width: 197px !important;
+  }
+}
+
+.lm-lookup__input__results {
+  @media only screen and (max-width: $mq-up-to-tablet) {
+    width: 197px !important;
+  }
+}
+
+.lm-lookup__input__results.none {
+  display: none !important;
+}
+
+.lm-lookup__input {
+  padding-right: 0px !important;
+}
+
+ul li a {
+  color: white;
+  padding-left: 0;
+}
+
+ul li a:hover {
+  color: $brand-green;
+}
+
+.fa-wrench {
+  padding-right: 3px;
+}
+
+.fa-shopping-bag {
+  margin-right: 4px;
+}
+
+a.dropdown-toggle {
+  @media only screen and (min-width: $mq-tablet) {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+}
+
+ul.dropdown-menu {
+  padding: 5px 15px;
+  background-color: $brand-primary;
+  border: 0;
+  margin-left: 15px;
+  border-top: 5px;
+  border-top-color: $brand-primary-light;
+  border-style: solid;
+}
+
+ul.dropdown-menu li a {
+  color: $brand-primary;
+}
+
+ul.dropdown-menu li a:hover {
+  color: $brand-green;
+  background-color: transparent;
+}
+
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+  background-color: transparent;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus,
+.nav>li>a:active {
+  background-color: transparent;
+  color: $brand-success;
+}
+
+button.navbar-toggle {
+  margin-right: 0px;
+}
+
+nav {
+  background-color: $brand-primary;
+}
+
+nav.navbar.navbar-default {
+  border-radius: 0px;
+  border: 0;
+  margin-bottom: 0px;
+}
+
+a.dropdown-toggle:active {
+  background-color: $brand-primary;
+}
+
+.navbar-default .navbar-nav>.open>a {
+  background-color: $brand-primary;
+}
+
+.navbar-right {
+  @media (min-width: 768px) {
+    margin-right: 0;
+  }
+}
+
+#navbar>ul>li.btn-group.dropdown.open>ul {
+  background-color: $brand-primary;
+  border: 0;
+}
+
+ul.dropdown-menu li a {
+  color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: $brand-primary;
+}
+
+.navbar-brand {
+  display: block;
+  margin-left: 0px !important;
+  margin-right: 15px !important;
+  @media only screen and (min-width: $mq-tablet) {
+    padding: 5px 0 0 0;
+  }
+  @media only screen and (max-width: $mq-up-to-tablet) {
+    padding: 12px 0 0 0;
+  }
+}
+
+.navbar-header {
+  position: relative;
+  z-index: 9999;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.navbar-collapse {
+  @media only screen and (min-width: $mq-tablet) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.lm-lookup__form #search-button{
+  display: none !important;
+}

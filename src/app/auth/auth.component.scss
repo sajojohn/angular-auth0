@@ -1,0 +1,129 @@
+@import '../shared/styles/app/variables.scss';
+@import '../shared/styles/app/variables.scss';
+@import '../shared/styles/app/media-queries.scss';
+#login-wrapper {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-top: 176px;
+  margin-left: -237px;
+  padding: 25px;
+  width: 475px;
+  background: $brand-primary;
+  text-align: center;
+}
+
+#login-wrapper input {
+  margin: 0 auto;
+  width: 300px;
+}
+
+#login-wrapper .alert {
+  margin: 10px auto;
+  width: 300px;
+}
+
+#login-wrapper label {
+  color: white;
+}
+
+#login-wrapper button {
+  background-color: $brand-primary-light;
+  color: white;
+}
+
+#login-wrapper button:hover {
+  background-color: $brand-primary;
+  color: white;
+}
+
+#login-wrapper img {
+  width: 150px;
+}
+
+#login-wrapper hr {
+  border-color: white;
+}
+
+p.warning {
+  color: $brand-danger;
+}
+
+p.success {
+  color: $brand-success;
+}
+
+.container-fluid {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+//   background: url('../../../assets/img/masthead.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p.passwordReset {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+p.passwordReset:hover {
+  color: $brand-success;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: $mq-mobile) and (orientation: portrait) {
+  #login-wrapper {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    left: 0;
+    position: relative;
+  }
+  .container-fluid {
+    padding: 0 15px;
+  }
+  #login-wrapper input {
+    width: 100%;
+  }
+  #login-wrapper .alert {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: $mq-mobile) and (orientation: landscape) {
+  #login-wrapper {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: 15px 0;
+    padding: 25px;
+  }
+  .container-fluid {
+    padding: 0 15px;
+  }
+  #login-wrapper input {
+    width: 100%;
+  }
+  #login-wrapper .alert {
+    width: 100%;
+  }
+}
